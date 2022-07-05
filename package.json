@@ -1,6 +1,6 @@
 {
-    "name": "personnummer.js",
-    "version": "2.1.0",
+    "name": "@meitner/personnummer.js",
+    "version": "2.2.0",
     "description": "JavaScript script to validate and parse Swedish personal identity numbers and corporate identity numbers. Written in TypeScript and includes types.",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -16,39 +16,17 @@
         "babel-build": "babel lib -d dontpush",
         "prepare": "npm run test && npm run build"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/kelszo/personnummer.js.git"
-    },
-    "keywords": [
-        "typescript",
-        "ts",
-        "personnummer",
-        "validate",
-        "validering",
-        "validation",
-        "swedish",
-        "parsing",
-        "parse",
-        "personal",
-        "number",
-        "identity",
-        "social",
-        "security",
-        "national",
-        "organisations",
-        "organisationsnummer",
-        "luhn"
+    "contributors": [
+        {
+            "name": "Kelvin Szolnoky",
+            "email": "kszolnoky@protonmail.com"
+        },
+        {
+            "name": "Mattis Abrahamsson",
+            "email": "mattis@meitner.se"
+        }
     ],
-    "author": {
-        "name": "Kelvin Szolnoky",
-        "email": "kszolnoky@protonmail.com"
-    },
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/kelszo/personnummer.js/issues"
-    },
-    "homepage": "https://github.com/kelszo/personnummer.js/blob/master/README.md",
     "devDependencies": {
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.9.0",
