@@ -1,5 +1,7 @@
 # personnummer.js
 
+This fork changes the format of normalized personal numbers to YYYYMMDD-XXXX
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![npm version](https://img.shields.io/npm/v/@meitner/personnummer.js.svg?style=popout-square)
 
 JavaScript script (written in TypeScript) to validate and parse Swedish personal identity numbers. Fixes problems other packages fail to fix, e.g.: leap years, co-ordination numbers (samordningsnummer), parsing, and strict validation. All in one small package without dependencies. Works for Swedish personal numbers of all formats, see example below.
