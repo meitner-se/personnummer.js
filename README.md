@@ -1,6 +1,6 @@
 # personnummer.js
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![npm version](https://img.shields.io/npm/v/personnummer.js.svg?style=popout-square) ![Github issues](https://img.shields.io/github/issues/kelszo/personnummer.js.svg?style=popout-square)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![npm version](https://img.shields.io/npm/v/@meitner/personnummer.js.svg?style=popout-square)
 
 JavaScript script (written in TypeScript) to validate and parse Swedish personal identity numbers. Fixes problems other packages fail to fix, e.g.: leap years, co-ordination numbers (samordningsnummer), parsing, and strict validation. All in one small package without dependencies. Works for Swedish personal numbers of all formats, see example below.
 
@@ -8,7 +8,7 @@ Also works with Swedish organisations numbers.
 
 ## Installing
 
-Install the module with npm: `npm install personnummer.js`
+Install the module with npm: `npm install @meitner/personnummer.js`
 
 ## Basic usage
 
@@ -36,7 +36,7 @@ personnummer.parse("19710904-5307");
   valid: true,
   type: 'PERSONNUMMER',
   input: '19710904-5307',
-  normalised: '197109045307',
+  normalised: '19710904-5307',
   date: 1971-09-04T00:00:00.000Z,
   age: 47,
   gender: 'FEMALE',
@@ -95,7 +95,7 @@ personnummer.parse("980417+6320", { strict: false, forgiving: false });
   valid: true,
   type: 'PERSONNUMMER',
   input: '980417+6320',
-  normalised: '189804176320',
+  normalised: '18980417-6320',
   date: 1898-04-17T00:00:00.000Z,
   age: 121,
   gender: 'FEMALE',
@@ -112,7 +112,7 @@ personnummer.parse("980417+6320", { strict: true, forgiving: true });
   valid: true,
   type: 'PERSONNUMMER',
   input: '980417+6320',
-  normalised: '199804176320',
+  normalised: '19980417-6320',
   date: 1998-04-17T00:00:00.000Z,
   age: 21,
   gender: 'FEMALE',
@@ -126,7 +126,7 @@ personnummer.parse("0411643844");
   valid: true,
   type: 'SAMORDNINGSNUMMER',
   input: '0411643844',
-  normalised: '200411643844',
+  normalised: '20041164-3844',
   date: 2004-11-04T00:00:00.000Z,
   age: 14,
   gender: 'FEMALE',
